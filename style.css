@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: #ffffff;
+  width: auto;
 }
 
 a {
@@ -9,6 +10,10 @@ a {
 }
  h1 {
    margin: 0px;
+ }
+
+ img {
+   max-width: 100%;
  }
 /* header start */
 
@@ -70,7 +75,8 @@ a {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #000;
+  color: #fff;
+  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-transform: capitalize;
@@ -204,7 +210,6 @@ header {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  margin: 10px;
 }
 
 .feature_item {
@@ -246,6 +251,7 @@ header {
     flex-basis: 100%;
     flex: 1;
     margin: 10px;
+    padding-right: 15px;
 }
 
 #section-p-1 {
@@ -262,9 +268,16 @@ header {
   text-align: center;
 }
 
-.sec-3-head {
+.head_2 {
   font-weight: 100;
   padding-top: 50px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.head_3 {
+  font-weight: 100;
+  margin: 0;
 }
 
 .row2 {
@@ -320,4 +333,77 @@ header {
 .testimonial_author{
   text-align: left;
   color: #726E6B;
+}
+
+.section-4 {
+  background-color:#323335;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+}
+.contact-form {
+  margin: auto;
+  width: 57%;
+  padding: 15px;
+}
+
+.contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1ch;
+}
+.input_field {
+  padding: 5px 60px 10px 10px;
+    border-radius: 7px;
+    font-size: 13px;
+    border: 1px solid transparent;
+}
+.text_field {
+  width: 89%;
+  margin-top: 15px;
+  height: 60px;
+}
+
+.section-5 {
+  background-color: #171616;
+  height: auto;
+  color: #a59d9d;
+  padding: 30px;
+}
+
+#footer_text {
+  margin: 0;
+  display: inline;
+}
+.footer-icons {
+  display: inline;
+  float: right;
+}
+.footer-icons > a {
+  color: #a59d9d;
+}
+
+@media (max-width: 880px) {
+  .row {
+    padding-top: 30px;
+    left: 0%;
+    width: 100%;
+    position: static;
+    top: 0%;
+}
+
+.section-con, .row2 {
+  flex-direction: column;
+}
+
+.testimonial {
+  margin: 0px 0px 108px 0px;
+}
+.row2 {
+  padding-bottom: 0px;
+}
+.contact-inner {
+  grid-template-columns: 0;
+}
+
 }
