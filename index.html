@@ -108,10 +108,13 @@
 	</section>
 
 	<section class="section-4">
+
 			<h2 class="head_2">Convinced To Work With Us?</h2>
 			<h3 class="head_3">Company has helped agencies keep their promises to clients since 2005.</h3>
 		<div class="contact-form">
-			<form  action="#" method="POST" accept-charset="UTF-8" onsubmit="submitted=true;" target="hidden_iframe">
+			
+				<!-- <form  action="#" method="POST" accept-charset="UTF-8" onsubmit="submitted=true;" target="hidden_iframe"> -->
+			<form>
 				<div class="contact-inner">
 				<div class="validate-input" data-validate="Name is required">
 					<input class="input_field" type="text" name="name" placeholder="Full Name">
@@ -129,12 +132,8 @@
 					<textarea class="input_field text_field" name="message" placeholder="Message in bref"></textarea>
 				</div>
 
-				<div class="container-contact100-form-btn">
-					<button class="btn_1">
-						Submit
-					</button>
-				</div>
-			
+				<div id="submit_button" class="btn_1"></div>
+
 			</form>
 		</div>
 	</section>
@@ -148,6 +147,11 @@
 					
 		</div>
 	</footer>
-<script src="/index.js"></script>
+
+ <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="index.js"></script>
 </body>
 </html>

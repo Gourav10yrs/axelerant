@@ -84,6 +84,10 @@ a {
   background-color: #EE3C00;
 } 
 
+.btn_1 p {
+  margin: 0;
+} 
+
 .icon-get {
   padding-right: 6px;
 }
