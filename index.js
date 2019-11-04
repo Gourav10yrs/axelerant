@@ -5,7 +5,9 @@ const e = React.createElement;
 class SubmitButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { submit: false };
+    this.state = {
+      submit: false
+    };
   }
 
   render() {
@@ -14,8 +16,11 @@ class SubmitButton extends React.Component {
     }
 
     return e(
-      'p',
-      { onClick: () => this.setState({ submit: true }) },
+      'p', {
+        onClick: () => this.setState({
+          submit: true
+        })
+      },
       'Submit'
     );
   }
